@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6e7d8"
+    tools:context=".Income">
+
+    <TextView
+        android:id="@+id/Income1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="30dp"
+        android:text="Salary"
+        android:textColor="#FF0000"
+        android:textSize="35sp"
+        app:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/Income2"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/Income1"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="53dp"
+        android:paddingBottom="0dp"
+        android:text="INCOME  FROM  RENT"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        app:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/Income3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/Income2"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="130dp"
+        android:text="FREELANCING"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        app:fontFamily="cursive" />
+
+
+    <TextView
+        android:id="@+id/Income4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Income3"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="49dp"
+        android:text="PENSION"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        app:fontFamily="cursive" />
+
+    <EditText
+        android:id="@+id/eTIncome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="30dp"
+        android:hint="Amount  "
+        android:inputType="number"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/eTIncome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eTIncome1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="151dp"
+        android:layout_marginRight="24dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/eTIncome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eTIncome2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="264dp"
+        android:layout_marginRight="24dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/eTIncome4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/eTIncome3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="351dp"
+        android:layout_marginRight="24dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+
+    <Button
+        android:id="@+id/bbIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="130dp"
+        android:layout_marginBottom="93dp"
+        android:text="Save Income"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/salaryjpg_modified" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/iv1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/forrent_modified" />
+
+    <ImageView
+        android:id="@+id/iv3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/iv2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/freelancejpg_modified"/>
+
+    <ImageView
+        android:id="@+id/iv4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/iv3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/pensionpng" />
+
+
+</RelativeLayout>

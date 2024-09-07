@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rel"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+    <TextView
+        android:id="@+id/currentDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="90dp"
+        android:text="Current Date: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="151dp"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="245dp"
+        android:text="Expense" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="147dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="154dp"
+        android:text="Check Balance" />
+
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="151dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="342dp"
+        android:text="Income" />
+
+
+</RelativeLayout>

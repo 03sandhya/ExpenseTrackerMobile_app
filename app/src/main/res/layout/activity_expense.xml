@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6e7d8"
+    tools:context=".Expense">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/cubeexpenses" />
+
+
+            <ImageView
+                android:id="@+id/view2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view1"
+                android:src="@drawable/idly_modified" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/view2"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="20dp"
+                android:text="Food"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/view1"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:hint="Rs"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/view3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view2"
+                android:src="@drawable/electricitypng_modified" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view2"
+                android:paddingLeft="10dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="EletricityBill"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/view2"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view4"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view3"
+                android:src="@drawable/petrol" />
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="160dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view2"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="5dp"
+                android:text="Petrol"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/view3"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view5"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view4"
+                android:src="@drawable/grocery" />
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view5"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Grocery"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view4"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view6"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view5"
+                android:src="@drawable/mobile_modified"/>
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view5"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Recharge"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit5"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view5"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view7"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view6"
+                android:src="@drawable/tablet" />
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view5"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Health"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit6"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view6"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view7"
+                android:src="@drawable/entertainment_modified"/>
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view8"
+                android:paddingLeft="0dp"
+                android:paddingTop="17dp"
+                android:paddingRight="5dp"
+                android:text="Entertainment"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit7"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view7"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view8"
+                android:src="@drawable/shopping" />
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text7"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view6"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Shopping"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit8"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view8"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view9"
+                android:src="@drawable/transportexpense"/>
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text8"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view7"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Transport"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit9"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view9"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view11"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view10"
+                android:src="@drawable/education"/>
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text9"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view8"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="Education"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit10"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view10"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view12"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view11"
+                android:src="@drawable/tax"/>
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text10"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view9"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="IncomeTax"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit11"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view11"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+            <ImageView
+                android:id="@+id/view13"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/view12"
+                android:src="@drawable/houserent"/>
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/text11"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/view10"
+                android:paddingLeft="20dp"
+                android:paddingTop="23dp"
+                android:paddingRight="5dp"
+                android:text="House Rent"
+                android:textColor="#FF0000"
+                android:textSize="30sp"
+                app:fontFamily="cursive" />
+            <EditText
+                android:id="@+id/edit12"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view12"
+                android:layout_marginLeft="250dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:hint="Rs"/>
+
+            <Button
+                android:id="@+id/sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textSize="25sp"
+                android:layout_below="@+id/text12"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                />
+            <Button
+                android:id="@+id/can1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/sub1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@+id/text12"
+                />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+
+
+
+
